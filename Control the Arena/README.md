@@ -24,7 +24,7 @@ After visiting the website and logging in, you were greeted with the message:
 
 Firing up burp and inspecting all the requests it become clear pretty fast, that this challenge has to do with JWT tampering as there was a request to the "/admin" controller returning "401 Unauthorized" and the return of a JWT from the "/loggedin" controller.
 
-Inspecting the token revelead the following structure:
+Inspecting the token revealed the following structure:
 
 ```json
 {

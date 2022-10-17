@@ -33,7 +33,7 @@ The task was clear soon, but we had no knowledge of "hardware hacking".
 
 After a bit of research we found out, that the "apu2-boot.sr" file contained all the captured signals from the probes and we can have a look at them with "PulseView" which is a GUI for a signal analysis software called "sigrok" (https://sigrok.org/wiki/Main_Page):
 
-![signals](F:\ctf\writeups\writeup\CTF2022 - Spanning Tree\Sniff\signals.jpg)
+![signals](signals.jpg)
 
 As the challenge text states the PCB must somehow contain a passphrase to decrypt the device on boot... So this password has to be somehow hidden in this mess of data.
 
@@ -49,7 +49,7 @@ We added the decoder to the PulseView "scenario" and had to map the pin signals 
 
 After a long time we finally found the matching pin to channel mapping and we configured the decoder accordingly:
 
-![channel_mapping](F:\ctf\writeups\writeup\CTF2022 - Spanning Tree\Sniff\channel_mapping.png)
+![channel_mapping](channel_mapping.png)
 
 Nice, what a journey up to this point.... So, let the decoder do its work, right?
 
@@ -105,6 +105,6 @@ mkdir /media/ctf
 mount /dev/mapper/ctf /media/ctf
 ```
 
-![flag](F:\ctf\writeups\writeup\CTF2022 - Spanning Tree\Sniff\flag.png)
+![flag](flag.png)
 
 There is the flag! And some stuff for another challenge, we were not able to complete. What a journey....

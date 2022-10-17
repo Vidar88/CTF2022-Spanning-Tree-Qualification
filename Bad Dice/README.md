@@ -3,7 +3,7 @@
 
 ![date](https://img.shields.io/badge/date-14.10.2022-brightgreen.svg)  
 ![solved in time of CTF Qualification](https://img.shields.io/badge/solved-in%20time%20of%20CTF%20%20Qualification-brightgreen.svg)  
-![exploitation (kind of) category](https://img.shields.io/badge/category-exploitation (kind of)-lightgrey.svg)
+![exploitation (kind of) category](https://img.shields.io/badge/category-exploitation%20(kind%20of)-lightgrey.svg)
 
 ## Description
 ![desc](desc.png)

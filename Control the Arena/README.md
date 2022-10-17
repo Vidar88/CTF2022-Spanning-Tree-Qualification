@@ -56,6 +56,6 @@ With a little help from a friend we found out, that you could make the server us
 
 So, we used burp with the extension "JWT Editor" to generate our own keys, put them in the header and sign the JWT with them:
 
-![jwt_rsa](F:\ctf\writeups\writeup\CTF2022 - Spanning Tree\Control the Arena\jwt_rsa.jpg)
+![jwt_rsa](jwt_rsa.jpg)
 
-![result](F:\ctf\writeups\writeup\CTF2022 - Spanning Tree\Control the Arena\result.jpg)
+![result](result.jpg)

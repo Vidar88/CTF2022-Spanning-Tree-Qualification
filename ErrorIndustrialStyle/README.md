@@ -36,7 +36,7 @@ We installed a modbus tcp client (https://github.com/favalex/modbus-cli) and sta
 
 There was nothing special at first, but we then remembered that the challenge text was about a number "83". Maybe the 83rd register is something that brings us forward? We kept on poking:
 
-![strange](F:\ctf\writeups\writeup\CTF2022 - Spanning Tree\ErrorIndustrialStyle\strange.png)
+![strange](strange.png)
 
 Huh? The host with IP "192.168.1.33" was behaving pretty strange. Every other host responded with the content of the register. We are on to something! Didn't the challenge name and text talk about an "error telling us something"?
 
@@ -48,7 +48,7 @@ for m in {0..127};do modbus 192.168.1.40:5020 h@$m;done
 
 and bingo! The error came up in another register!
 
-![modbus](F:\ctf\writeups\writeup\CTF2022 - Spanning Tree\ErrorIndustrialStyle\modbus.PNG)
+![modbus](modbus.PNG)
 
 We went through the whole 30 hosts and looked out for the faulty registers. This gave us a list of decimals.
 
